@@ -1,0 +1,9 @@
+C:\svn7.4\libraries\dotNet\examples\RBroker\Tutorial\Pooled\Pooled\bin\Release\Pooled.exe
+C:\svn7.4\libraries\dotNet\examples\RBroker\Tutorial\Pooled\Pooled\bin\Release\Pooled.pdb
+C:\svn7.4\libraries\dotNet\examples\RBroker\Tutorial\Pooled\Pooled\bin\Release\DeployR7.4.dll
+C:\svn7.4\libraries\dotNet\examples\RBroker\Tutorial\Pooled\Pooled\bin\Release\DeployRBroker7.4.dll
+C:\svn7.4\libraries\dotNet\examples\RBroker\Tutorial\Pooled\Pooled\bin\Release\Newtonsoft.Json.dll
+C:\svn7.4\libraries\dotNet\examples\RBroker\Tutorial\Pooled\Pooled\bin\Release\DeployR7.4.pdb
+C:\svn7.4\libraries\dotNet\examples\RBroker\Tutorial\Pooled\Pooled\bin\Release\DeployRBroker7.4.pdb
+C:\svn7.4\libraries\dotNet\examples\RBroker\Tutorial\Pooled\Pooled\obj\x86\Release\Pooled.exe
+C:\svn7.4\libraries\dotNet\examples\RBroker\Tutorial\Pooled\Pooled\obj\x86\Release\Pooled.pdb

@@ -1,0 +1,10 @@
+C:\svn7.4\libraries\dotNet\examples\RBroker\Tutorial\Background\Background\bin\Release\Background.exe
+C:\svn7.4\libraries\dotNet\examples\RBroker\Tutorial\Background\Background\bin\Release\Background.pdb
+C:\svn7.4\libraries\dotNet\examples\RBroker\Tutorial\Background\Background\bin\Release\DeployR7.4.dll
+C:\svn7.4\libraries\dotNet\examples\RBroker\Tutorial\Background\Background\bin\Release\DeployRBroker7.4.dll
+C:\svn7.4\libraries\dotNet\examples\RBroker\Tutorial\Background\Background\bin\Release\Newtonsoft.Json.dll
+C:\svn7.4\libraries\dotNet\examples\RBroker\Tutorial\Background\Background\bin\Release\DeployR7.4.pdb
+C:\svn7.4\libraries\dotNet\examples\RBroker\Tutorial\Background\Background\bin\Release\DeployRBroker7.4.pdb
+C:\svn7.4\libraries\dotNet\examples\RBroker\Tutorial\Background\Background\obj\x86\Release\Background.exe
+C:\svn7.4\libraries\dotNet\examples\RBroker\Tutorial\Background\Background\obj\x86\Release\Background.pdb
+C:\svn7.4\libraries\dotNet\examples\RBroker\Tutorial\Background\Background\obj\x86\Release\Background.csprojResolveAssemblyReference.cache
