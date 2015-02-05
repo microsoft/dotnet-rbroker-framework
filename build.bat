@@ -20,7 +20,7 @@ set CONFIG=Release
 ::IMPORTANT!!!!
 ::set the location where referenced assemblies can be found (Broker depends on previously built deployr client library files)
 ::you will have to adjust this path as necessary
-set BROKER_LIB_REF_PATH=%ROOT_DIR%\..\deployr-dotnet-client-library\release
+set BROKER_LIB_REF_PATH=%ROOT_DIR%\..\dotnet-client-library\release
 
 ::define output dir
 set BROKER_LIB_OUTDIR=%ROOT_DIR%\release\
