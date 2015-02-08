@@ -1,1 +1,0 @@
-C:\svn7.4\libraries\dotNet\examples\RBroker\Tutorial\Discrete\Discrete\bin\Debug\Discrete.exe.config
