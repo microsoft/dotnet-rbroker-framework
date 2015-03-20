@@ -153,9 +153,28 @@ namespace DeployRBroker
             m_taskResourceTokenMap.TryGetValue(task, out obj);
             RProject rProject = (RProject)obj;
 
+
+            /*
+            * Check for Grid Exception
+            */ 
+            Boolean bGridException = false;
+
             Exception failure = result.getFailure();
-            if (failure != null) 
-            { 
+            if (failure != null)
+            {
+                if (failure.GetType() == typeof(HTTPRestException))
+                {
+                    HTTPRestException ex = (HTTPRestException)failure;
+                    if (ex.errorCode >= 910 || ex.errorCode ==403)
+                    {
+                        bGridException = true;
+                    }
+                }
+            }
+
+            if (bGridException == true)
+            {
+
                 /*
                 * On detection of an RGridException drop the RProject from
                 * the pool so further tasks are not directed to that RProject.
@@ -166,8 +185,8 @@ namespace DeployRBroker
                 * will report the new (smaller) pool size on
                 * RBroker.maxConcurrency() calls.
                 */
-  
-                if (m_taskListener != null) 
+
+                if (m_taskListener != null)
                 {
                     /*
                     * When asynchronous listener in use, failed task 
@@ -181,19 +200,19 @@ namespace DeployRBroker
                     * (or having to handle) temporary slot or grid related
                     * failures on RTasks.
                     */
-                    RTaskResultImpl resultImpl = (RTaskResultImpl) result;
+                    RTaskResultImpl resultImpl = (RTaskResultImpl)result;
                     resultImpl.repeatTask = true;
-  
+
                     /*
                     * Now re-submit for execution using the priority
                     * queue to expedite processing.
                     */
-  
-                    try 
+
+                    try
                     {
                         submit(task, true);
-                    } 
-                    catch (Exception tex) 
+                    }
+                    catch (Exception tex)
                     {
                         throw new Exception("PooledTaskBroker: callback, task re-submission ex=" + tex.ToString());
                     }
@@ -201,34 +220,34 @@ namespace DeployRBroker
 
 
                 int resizedPoolSize = (int)Interlocked.Decrement(ref m_parallelTaskLimit);
-                if (m_brokerListener != null) 
+                if (m_brokerListener != null)
                 {
                     Exception rbex;
-                    if (resizedPoolSize == 0) 
+                    if (resizedPoolSize == 0)
                     {
                         rbex = new Exception("DeployR grid failure detected, pool no longer operational, advise RBroker shutdown.");
-                        
-                    } 
-                    else 
+
+                    }
+                    else
                     {
-                        rbex = new Exception("DeployR grid failure detected, pool size auto-adjusted, max concurrency now " + resizedPoolSize  + ".");
+                        rbex = new Exception("DeployR grid failure detected, pool size auto-adjusted, max concurrency now " + resizedPoolSize + ".");
                     }
                     m_brokerListener.onRuntimeError(rbex.Message);
                 }
             }
             else
             {
-                if(rProject != null) 
+                if (rProject != null)
                 {
                     Boolean added = m_resourceTokenPool.TryAdd(rProject);
 
-                    if(!added) 
+                    if (!added)
                     {
                         throw new Exception("PooledTaskBroker: callback, project could not be added back to pool?");
                     }
 
-                } 
-                else 
+                }
+                else
                 {
                     throw new Exception("PooledTaskBroker: callback, task does not have matching project?");
                 }
