@@ -33,7 +33,7 @@ and all of it's third party DLL dependencies.
 Building the .NET RBroker Framework
 -----------------------------------
 
-The DeployR .NET RBroker Framework was created with Visual Studio 2010, using .NET Framework 4.0.
+The DeployR .NET RBroker Framework was created with Visual Studio 2013, using .NET Framework 4.5.1.
 
 A successful build will result in the creation of `DeployR-DotNet-RBroker-<version>.zip` file containing the 
 DeployR RBroker Framework library and it's dependencies.  It will also create a `DeployRBroker.chm` help file.
