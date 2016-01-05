@@ -9,8 +9,8 @@ set VERSION=8.0.0
 ::set the configuration (Release or Debug)
 set CONFIG=Release
 
-::set the platform (x86)
-set PLATFORM=x86
+::set the platform (x86,x64,Any CPU)
+set PLATFORM="Any CPU"
 
 
 ::
