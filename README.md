@@ -33,7 +33,7 @@ and all of it's third party DLL dependencies.
 Building the .NET RBroker Framework
 -----------------------------------
 
-The DeployR .NET RBroker Framework was created with Visual Studio 2010, using .NET Framework 4.0.
+The DeployR .NET RBroker Framework was created with Visual Studio 2013, using .NET Framework 4.5.1.
 
 A successful build will result in the creation of `DeployR-DotNet-RBroker-<version>.zip` file containing the 
 DeployR RBroker Framework library and it's dependencies.  It will also create a `DeployRBroker.chm` help file.
@@ -62,7 +62,7 @@ The file "deployR.shfbproj", is a "Sandcastle Help File Builder" project file
 License
 =======
 
-Copyright (C) 2010-2014 by Revolution Analytics Inc.
+Copyright (C) 2010-2015 by Microsoft Corporation
 
 This program is licensed to you under the terms of Version 2.0 of the
 Apache License. This program is distributed WITHOUT
