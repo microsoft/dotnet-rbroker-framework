@@ -83,11 +83,25 @@ namespace DeployRBroker
 
                 long startTime = Environment.TickCount;
 
-                RProjectExecution execResult = m_rProject.executeScript(m_task.filename,
-                                          m_task.directory,
-                                          m_task.author,
-                                          m_task.version,
-                                          options);
+                RProjectExecution execResult = null;
+                if(m_task.code != null)
+                {
+                    execResult = m_rProject.executeCode(m_task.code,
+                                              options);
+                }
+                else if(m_task.external != null)
+                {
+                    execResult = m_rProject.executeExternal(m_task.external,
+                                              options);
+                }
+                else
+                {
+                    execResult = m_rProject.executeScript(m_task.filename,
+                                              m_task.directory,
+                                              m_task.author,
+                                              m_task.version,
+                                              options);
+                }
 
                 
                 timeOnCall = Environment.TickCount - startTime;
