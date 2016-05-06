@@ -4,7 +4,7 @@
 set ROOT_DIR=%CD%
 
 ::specify the version of the library
-set VERSION=8.0.0
+set VERSION=8.0.5
 
 ::set the configuration (Release or Debug)
 set CONFIG=Release
