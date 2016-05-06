@@ -26,19 +26,19 @@
     <Preliminary>False</Preliminary>
     <NamingMethod>Guid</NamingMethod>
     <HelpTitle>DeployRBroker</HelpTitle>
-    <CopyrightText>Copyright %28c%29 2010 - 2015, Microsoft Corporation, All rights reserved.</CopyrightText>
+    <CopyrightText>Copyright %28c%29 2010 - 2016, Microsoft Corporation, All rights reserved.</CopyrightText>
     <ContentPlacement>AboveNamespaces</ContentPlacement>
     <DocumentationSources>
       <DocumentationSource sourceFile="..\src\DeployRBroker.sln" />
     </DocumentationSources>
-    <HelpFileVersion>8.0.0.0</HelpFileVersion>
+    <HelpFileVersion>8.0.5.0</HelpFileVersion>
     <PlugInNamespaces>ms.vsipcc+, ms.vsexpresscc+</PlugInNamespaces>
     <CollectionTocStyle>Hierarchical</CollectionTocStyle>
     <MSHelp2SdkLinkType>Msdn</MSHelp2SdkLinkType>
     <IncludeStopWordList>True</IncludeStopWordList>
-    <ProjectSummary>DeployRBroker Library 8.0</ProjectSummary>
+    <ProjectSummary>DeployRBroker Library 8.0.5</ProjectSummary>
     <NamespaceSummaries>
-      <NamespaceSummaryItem name="DeployRBroker" isDocumented="True">DeployRBroker Library 8.0</NamespaceSummaryItem>
+      <NamespaceSummaryItem name="DeployRBroker" isDocumented="True">DeployRBroker Library 8.0.5</NamespaceSummaryItem>
     </NamespaceSummaries>
     <VisibleItems>ExplicitInterfaceImplementations, InheritedMembers, ProtectedInternalAsProtected</VisibleItems>
     <BuildAssemblerVerbosity>OnlyWarningsAndErrors</BuildAssemblerVerbosity>
@@ -66,6 +66,6 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Win32' ">
   </PropertyGroup>
-  <!-- Import the SHFB build targets --> 
-  <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" /> 
+  <!-- Import the SHFB build targets -->
+  <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
 </Project>
